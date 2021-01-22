@@ -12,7 +12,7 @@ exports.handler = async (event, context) => {
     // let reqObj = JSON.parse(event.body);
     // console.log(reqObj);
 
-    var client = new faunadb.Client({ secret: process.env.FAUNADB_ADMIN_SECRET });
+    var client = new faunadb.Client({ secret: "fnAD_7fdDxACADm8t6xyTjNTXTHFaCTppRj6smkK" });  // process.env.FAUNADB_ADMIN_SECRET
 
     // var result = await client.query(
     //   q.Create(
