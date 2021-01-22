@@ -108,7 +108,7 @@ export default function Home() {
             return  (<div key={id}>
                 <p >{task.data.message}
                 <Button onClick={async () => {
-                    const data = await deleteTodo(task.ref['@ref'].id)
+                    await deleteTodo(task.ref['@ref'].id)  // const data = 
                     setUSEffect(!USEffect)
                 }} >
                     <DeleteIcon />
